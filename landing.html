@@ -9,8 +9,11 @@
 <head>
 	<title>Joel Tan</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -34,7 +37,7 @@
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="landing.html">Overview</a></li>
+				<li><a href="landing.html">Hobbies</a></li>
 				<li><a href="about_me.html">About Me</a></li>
 				<li><a href="achievements.html">Achievements</a></li>
 			</ul>
@@ -43,7 +46,7 @@
 		<!-- Banner -->
 		<!-- Note: The "styleN" class below should match that of the header element. -->
 		<section id="banner" class="style2">
-			<div class="inner">
+			<div class="inner" style="height: auto;">
 				<span class="image">
 					<img src="./images/council.png" alt="" />
 				</span>
@@ -52,16 +55,89 @@
 				</header>
 				<div class="content">
 					<p>Currently an SMU School of Information Systems' Student Sumitomo Mitsui Banking Corporation
-						 <br> Previous: Align Technology, ComfortDelgro(Taxi) </p>
+						<br> Previous: Align Technology, ComfortDelgro(Taxi)
+					</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Main -->
 		<div id="main">
-
-			<!-- One -->
 			<section id="one">
+				<div id="work">Worked at</div>
+				<div>
+					<div class="word-list">
+						<span id="smbc">SMBC</span>
+						<span id="align">Align Technology</strong></span>
+						<span id="comfort">ComfortDelgro</span>
+					</div>
+				</div>
+			</section>
+			<div id="two" class="scrollpage">
+				<section class="one" id="experience">
+					<div class="container">
+						<div class="col">
+							<h2 style="margin-left: 6px;">Sumitomo Mitsui Banking Corporation</h2>
+							<img src="images/23sa_milestone.JPG" style="height: 80vh; margin-left: 6px;">Will replace
+							the photo
+						</div>
+						<div class="col">With a diverse skillset, I have demonstrated expertise in developing
+							automation tools using Jenkins, Powershell, and Shell Script, along with proficiency in
+							Gitea and Ansible. I successfully tested two proof of concept projects, specifically API
+							Testing and API Policy (Cache Storing). Additionally, I contributed to multiple
+							documentation efforts, providing detailed rationale, risk analysis, and remarks for Cloud
+							Governance. Furthermore, I created Runbooks for the Test Environment, implementing efficient
+							log deletion processes. In my time at the bank, I acquired knowledge about SDLC and applied
+							Agile Methodology to adhere to MAS Regulations. Lastly, I successfully planned SMBC
+							Singapore's 60th Anniversary, showcasing my organizational and project management skills.
+						</div>
+					</div>
+				</section>
+				<section class="two" id="experience">
+					<div class="container">
+						<div class="col">
+							<h2 style="margin-left: 6px">Align Technology</h2>
+							<img src="images/Align Tech/happycny.jpg"
+								style="height: 80vh; border-radius: 15%; margin-left: 6px;width: 80vh;">
+						</div>
+						<div class="col">
+							<p>During my tenure, I played a key role in shaping Insight App capabilities
+								across APAC, driving alignment between SFDC and the application. I collaborated with
+								stakeholders to translate ideas into mobile applications, addressing market needs.
+								Additionally, I effectively communicated with my team and developed a predictive
+								analysis
+								toolset using machine learning to forecast future quarter sales.</p>
+						</div>
+					</div>
+				</section>
+				<section class="three" id="experience">
+					<div class="container">
+						<div class="col">
+							<h2 style="margin-left: 6px">ComfortDelgro(Taxi)</h2>
+							<img src="images/comfort_food.jpg"
+								style="height: 80vh; border-radius: 15%; margin-left: 6px;width: 80vh;">
+						</div>
+						<div class="col">
+							<p>In my role as a QA Tester, I conducted extensive testing of applications such as CDG Zig,
+								ZigX, and Rent-A-Car in the UAT environment, utilizing tools like Jira, Confluence,
+								Burp, and Postman. I diligently identified and reported bugs and API issues,
+								contributing to improved functionality. As a part-time Technical Documentation Writer, I
+								ensured accurate and accessible documentation using Confluence, Postman API, and Jira.
+								Additionally, as a Helpdesk Specialist, I provided end-user support, suggested
+								process/system improvements, and created user manuals to facilitate remote work during
+								the Covid-19 pandemic. Notable achievements include successful software/hardware
+								upgrades, effective issue resolution, streamlined reporting processes, and facilitating
+								a seamless transition to remote work for staff.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+
+		<!-- One -->
+		<!-- <section id="one">
 				<div class="inner">
 					<img src="">
 					<header class="major">
@@ -74,108 +150,67 @@
 			</section>
 
 			<!-- Two -->
-			<section id="two" class="spotlights">
-				<section>
-					<a href="about_me.html" class="image">
-						<img src="./images/rugby_self.png" alt="" data-position="center center" />
-					</a>
-					<div class="content">
-						<div class="inner">
-							<header class="major">
-								<h3>More About Me</h3>
-							</header>
-							<p>I played Rugby since 2011. From Primary School all the way to Junior College <br />
-								Currently I am playing Frisbee in university at SMU.
-							</p>
-							<ul class="actions">
-								<li><a href="about_me.html" class="button">Learn more</a></li>
-							</ul>
+
+
+
+	</div>
+
+	<!-- Contact -->
+	<section id="contact">
+		<div class="inner">
+			<section>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
 						</div>
 					</div>
-				</section>
-				<section>
-					<a href="about_me.html" class="image">
-						<img src="images/pic09.jpg" alt="" data-position="top center" />
-					</a>
-					<div class="content">
-						<div class="inner">
-							<header class="major">
-								<h3>Areas of Interest</h3>
-							</header>
-							<p>Am interested in the following aspects
-							<ol>
-								<li>Software Development</li>
-								<li>Web Development</li>
-								<li>CyberSecurity</li>
-							</ol>
-							</p>
-							<ul class="actions">
-								<li><a href="about_me.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Clear" /></li>
+					</ul>
+				</form>
 			</section>
-
-
-		</div>
-
-		<!-- Contact -->
-		<section id="contact">
-			<div class="inner">
+			<section class="split">
 				<section>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="6"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-							<li><input type="reset" value="Clear" /></li>
-						</ul>
-					</form>
+					<div class="contact-method">
+						<span class="icon solid alt fa-envelope"></span>
+						<h3>Email</h3>
+						<a href="#">joeltanec@gmail.com</a>
+					</div>
 				</section>
-				<section class="split">
-					<section>
-						<div class="contact-method">
-							<span class="icon solid alt fa-envelope"></span>
-							<h3>Email</h3>
-							<a href="#">joeltanec@gmail.com</a>
-						</div>
-					</section>
-					<section>
-						<div class="contact-method">
-							<span class="icon solid alt fa-phone"></span>
-							<h3>Phone</h3>
-							<span>(+65) 9060 5085</span>
-						</div>
-			</div>
-		</section>
+				<section>
+					<div class="contact-method">
+						<span class="icon solid alt fa-phone"></span>
+						<h3>Phone</h3>
+						<span>(+65) 9060 5085</span>
+					</div>
+		</div>
+	</section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://github.com/joelfatnugget" class="icon brands alt fa-github"><span
-								class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/joel-tan-a599b6201/"
-							class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Joel Tan</li>
-				</ul>
-			</div>
-		</footer>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="https://github.com/joelfatnugget" class="icon brands alt fa-github"><span
+							class="label">GitHub</span></a></li>
+				<li><a href="https://www.linkedin.com/in/joel-tan-a599b6201/"
+						class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Joel Tan</li>
+			</ul>
+		</div>
+	</footer>
 
 	</div>
 

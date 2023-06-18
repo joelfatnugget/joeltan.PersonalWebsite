@@ -1,35 +1,152 @@
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .gallery-item {
-    position: relative;
-  }
-  
-  .gallery-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .gallery-overlay {
-    position: absolute;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+section>div {
+  display: inline-block;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+div.word-list span {
+  display: block
+}
+
+div.word-list {
+  position: relative;
+  animation: cycle ease 10s infinite;
+}
+
+@keyframes cycle {
+  0% {
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease;
   }
-  
-  .gallery-item:hover .gallery-overlay {
-    opacity: 1;
+
+  10% {
+    top: 0;
   }
-  
+
+  20% {
+    top: -30px;
+  }
+
+  30% {
+    top: -30px;
+  }
+
+  40% {
+    top: -60px;
+  }
+
+  50% {
+    top: -60px;
+  }
+
+  60% {
+    top: -30px;
+  }
+
+  70% {
+    top: -30px;
+  }
+
+  80% {
+    top: 0px;
+  }
+
+  90% {
+    top: 0px;
+  }
+}
+
+
+#smbc {
+  color: #005b47;
+  font-weight: bold;
+}
+
+#align {
+  color: rgb(0, 166, 247);
+  font-weight: bold;
+
+}
+
+#comfort {
+  color: rgb(239, 99, 26);
+  font-weight: bold;
+
+}
+
+
+#one {
+  margin: 0 auto;
+}
+
+#experience {
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-shadow: 1px 1px 4px #000;
+  scroll-snap-align: start;
+  width: 100%;
+}
+
+section.one {
+  background-color: #005b47;
+  width: 100%;
+}
+
+section.two {
+  background-color: rgb(0, 166, 247);
+}
+
+section.three {
+  background-color: rgb(239, 99, 26);
+}
+
+
+.scrollpage{
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+}
+
+.scrollpage::-webkit-scrollbar{
+  display:none;
+}

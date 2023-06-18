@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 /*
 	Forty by HTML5 UP
@@ -3052,6 +3053,10 @@ button:disabled,
 
 .spotlights {
 	border-top: 0 !important;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
 .spotlights+* {
@@ -3067,7 +3072,6 @@ button:disabled,
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	background-color: #2e3450;
 }
 
 .spotlights>section>.image {
@@ -3129,7 +3133,7 @@ button:disabled,
 	-webkit-flex-direction: row-reverse;
 	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
-	background-color: #333856;
+
 }
 
 .spotlights>section:nth-child(2n)>.content {
@@ -3726,6 +3730,7 @@ body.is-preload #banner>.inner {
 
 #main {
 	background-color: #2a2f4a;
+	width: 100%;
 }
 
 #main>* {
@@ -4089,4 +4094,16 @@ body.is-menu-visible #menu .inner {
 	visibility: visible;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+  }
 
+
+.container{
+	display: contents;
+}
+
+.child{
+	margin:10px
+
+}
